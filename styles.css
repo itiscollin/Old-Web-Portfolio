@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Code+Pro&family=Space+Mono&display=swap");
+body {
+  margin: 0%;
+}
+
+/* Welcome Starts */
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  color: #1b1b1b;
+  background-color: #fffafa;
+}
+
+#welcome-section h1,
+p {
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  top: 30%;
+}
+
+#welcome-section p {
+  font-family: "Open Sans", sans-serif;
+  -webkit-animation: text-focus-in 1.5s ease-out 500ms both;
+  animation: text-focus-in 1.5s ease-out 500ms both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 375px) {
+  #welcome-section {
+    height: 90vh;
+  }
+  #welcome-section h1 {
+    font-size: 30px;
+  }
+  #welcome-section p {
+    font-size: 30px;
+  }
+}
+
+/* /////Welcome End///////// */
+
+/* /////Project Starts////// */
+#projects {
+  padding: 50px 0 50px 0;
+  background: #436b95;
+}
+#projects h1 {
+  font-size: 5vh;
+  color: white;
+  padding-bottom: 30px;
+}
+
+#project-headline {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.project-tile {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+@media (min-width: 1080px) {
+  .project-tile a:hover {
+    background: #3a3a3a;
+    box-shadow: 1.5px 0 5px 3px black;
+    color: #fffafa;
+  }
+}
+
+.project-tile a {
+  color: #1b1b1b;
+  text-decoration: none;
+  justify-self: center;
+  background: #436b95;
+}
+
+@media (max-width: 375px) {
+  .project-tile {
+    grid-template-columns: 0;
+    grid-template-rows: 1fr 1fr;
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 375px) {
+  #projects {
+    max-width: 375px;
+    padding: 0;
+  }
+  #projects h1 {
+    padding: 30px;
+    font-size: 20px;
+  }
+  .project-tile {
+    display: block;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .project-tile a {
+    font-size: 15px;
+    color: white;
+  }
+  .project-tile img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+/* /////Project Ends/////// */
+
+/* ///////Navbat Starts/////////// */
+#navbar {
+  display: flex;
+  background-color: #242124;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+  margin: 0%;
+  padding: 29px;
+}
+#navbar a {
+  text-decoration: none;
+  font-family: Verdana;
+  color: #fffafa;
+  padding: 30px;
+}
+
+#navbar :hover {
+  font-family: Verdana;
+  color: #1b1b1b;
+  background: #fffafa;
+}
+
+@media (max-width: 375px) {
+  #navbar {
+    padding: 10px 0 10px 10px;
+  }
+  #navbar a {
+    font-size: 10px;
+    padding-left: 0%;
+    padding-right: 10px;
+  }
+}
+
+/* //////////Navbar Ends//////////// */
+
+/* //////////Contact Starts/////////////// */
+
+#profile-link {
+  height: 25vh;
+  padding: 25px;
+  background: #fffafa;
+}
+#profile-link h2 {
+  text-align: center;
+  align-content: center;
+  font-family: "Source Code Pro", monospace;
+}
+
+#contact {
+  align-content: center;
+  text-align: center;
+}
+#contact a {
+  font-size: 5vh;
+  padding: 10px;
+}
+#contact img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
+
+#call-to-action {
+  width: 100%;
+  text-align: center;
+}
+
+.profile-name {
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+  color: #1b1b1b;
+}
+#contact :hover {
+  text-decoration: underline #1b1b1b;
+}
+
+@media (max-width: 375px) {
+  #profile-link {
+    font-size: 15px;
+    padding-bottom: 80px;
+  }
+  #call-to-action p {
+    font-size: 10px;
+  }
+  #contact a {
+    font-size: 10px;
+    justify-self: center;
+  }
+  #contact img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+}
